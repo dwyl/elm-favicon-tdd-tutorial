@@ -15,7 +15,7 @@ mkdir elm-favicon && cd elm-favicon && git init
 ```
 
 
-### Install `elm-test` (_if you don't already have it_)
+### Install `elm-test` (_if you don't already have it_)
 
 ```sh
 npm install elm-test -g
@@ -99,4 +99,11 @@ becomes:
 https://google.com:443/favicon.ico
 ```
 
-### k
+### Add Documentation (Comments) to Keep `elm-make` Happy
+
+E.g:
+```
+{-| Gives the favicon URL for a given URL.
+@docs fromUrl
+-}
+```
