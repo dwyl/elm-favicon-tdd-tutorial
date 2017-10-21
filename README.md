@@ -72,7 +72,17 @@ This test checks if URL path is stripped before appending the `"favicon.ico"`:
 ```
 
 
-### Investigate Packages for URL Parsing
+### Investigate Packages for URL Parsing > Chose: `sporto/erl`
 
 Search http://package.elm-lang.org/ for "URL" ...
 Decides to use: http://package.elm-lang.org/packages/sporto/erl
+
+install:
+```
+elm-package install sporto/erl
+```
+
+Remember to _also_ install in the `./tests/elm-package.json`:
+```
+cd tests && elm-package install sporto/erl && cd ..
+```

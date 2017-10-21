@@ -1,6 +1,13 @@
 module Favicon exposing (fromUrl)
 
+import Erl
+
 
 fromUrl : String -> String
-fromUrl url =
-    url ++ "/favicon.ico"
+fromUrl urlString =
+    let
+        url =
+            Erl.parse urlString
+    in
+        Erl.toString url
+            ++ "/favicon.ico"
