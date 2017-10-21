@@ -17,4 +17,8 @@ suite =
             \() ->
                 Favicon.fromUrl "https://github.com/audreyr/favicon-cheat-sheet"
                     |> Expect.equal "https://github.com:443/favicon.ico"
+        , test "URL with hash" <|
+            \() ->
+                Favicon.fromUrl "https://example.com/index.html#hash"
+                    |> Expect.equal "https://example.com:443/favicon.ico"
         ]

@@ -86,3 +86,15 @@ Remember to _also_ install in the `./tests/elm-package.json`:
 ```
 cd tests && elm-package install sporto/erl && cd ..
 ```
+
+### Update Tests to include TCP Port in the Favicon URL
+
+Given that `sporto/erl` includes the TCP port in the `url` entry when parsed,
+the tests need to be updated to include the port. e.g:
+```
+https://google.com/favicon.ico
+```
+becomes:
+```
+https://google.com:443/favicon.ico
+```
