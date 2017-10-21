@@ -1,10 +1,25 @@
 # elm-favicon
 
-Following along with Aaron VonderHaar's video:
+## Why?
+
+Even though Elm's compiler tells when code does not work,
+it's still _useful_ to know that we are covering all use-cases.
+For that reason, writing tests is _essential_!
+
+> Note: if you are totally new to TDD please see:
+https://github.com/dwyl/learn-tdd
+
+## What?
+
+A gentle introduction to TDD in Elm
+following Aaron VonderHaar's video:
+
 [![youtube-video-screenshot](https://user-images.githubusercontent.com/194400/31855007-dd719050-b699-11e7-9bd4-180ca21e4b67.png)](https://youtu.be/WanSL2aduQ4 "click to play!")
 https://youtu.be/WanSL2aduQ4
 
-Repo: https://github.com/avh4/elm-favicon (_has code but no docs..._)
+> The GitHub Repo: https://github.com/avh4/elm-favicon (_has code but no docs..._)
+> All Credit / Copyright goes to @avh4
+> Thanks to him for creating this superb video "let's code" tutorial!
 
 
 ## How?
