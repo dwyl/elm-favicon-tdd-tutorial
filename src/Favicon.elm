@@ -13,4 +13,5 @@ fromUrl urlString =
             { url
                 | path = [ "favicon.ico" ]
                 , hash = ""
+                , query = []
             }

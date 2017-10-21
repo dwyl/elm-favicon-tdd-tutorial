@@ -21,4 +21,8 @@ suite =
             \() ->
                 Favicon.fromUrl "https://example.com/index.html#hash"
                     |> Expect.equal "https://example.com:443/favicon.ico"
+        , test "URL with query string" <|
+            \() ->
+                Favicon.fromUrl "https://example.com/index.html?query"
+                    |> Expect.equal "https://example.com:443/favicon.ico"
         ]
