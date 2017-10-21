@@ -31,8 +31,10 @@ suite =
                     |> Expect.equal Nothing
         , test "URL with HTTP protocol" <|
             \() ->
+                Favicon.fromUrl "http://elm-lang.org"
+                    |> Expect.equal (Just "http://elm-lang.org/favicon.ico")
+        , test "URL with trailing slash" <|
+            \() ->
                 Favicon.fromUrl "http://elm-lang.org/"
                     |> Expect.equal (Just "http://elm-lang.org/favicon.ico")
-
-        -- TODO: handle trailing slashes
         ]

@@ -16,8 +16,7 @@ fromUrl urlString =
                         | path = [ "favicon.ico" ]
                         , hash = ""
                         , query = []
-
-                        -- , hasTrailingSlash = False
+                        , hasTrailingSlash = False
                     }
         else
             Nothing
