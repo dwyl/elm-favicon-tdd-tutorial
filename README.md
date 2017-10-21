@@ -1,4 +1,5 @@
 # elm-favicon
+
 Following along with Aaron VonderHaar's video:
 [![youtube-video-screenshot](https://user-images.githubusercontent.com/194400/31855007-dd719050-b699-11e7-9bd4-180ca21e4b67.png)](https://youtu.be/WanSL2aduQ4 "click to play!")
 https://youtu.be/WanSL2aduQ4
@@ -44,8 +45,13 @@ run the tests with the following command:
 elm-test
 ```
 
-You should see:
+You should see: <br />
+
 ![elm-test-failing](https://user-images.githubusercontent.com/194400/31855391-475ab912-b6a2-11e7-8c50-574728fe89cf.png)
+
+
+> Note: If you see the error: "**I cannot find module 'Favicon'.**"
+GOTO: https://github.com/dwyl/elm-favicon-tdd-tutorial/issues/1
 
 
 ### Make Tests Pass
@@ -98,6 +104,13 @@ becomes:
 ```
 https://google.com:443/favicon.ico
 ```
+
+### Run Tests Final Time
+
+Confirm all the tests are passing:
+
+![all tests passing](https://user-images.githubusercontent.com/194400/31856531-107fff10-b6bb-11e7-8fca-e474e9a6fb52.png)
+
 
 ### Add Documentation (Comments) to Keep `elm-make` Happy
 
