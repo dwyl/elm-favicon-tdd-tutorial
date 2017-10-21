@@ -13,4 +13,8 @@ suite =
             \() ->
                 Favicon.fromUrl "https://google.com"
                     |> Expect.equal "https://google.com/favicon.ico"
+        , test "URL with path" <|
+            \() ->
+                Favicon.fromUrl "https://github.com/audreyr/favicon-cheat-sheet"
+                    |> Expect.equal "https://github.com/favicon.ico"
         ]
