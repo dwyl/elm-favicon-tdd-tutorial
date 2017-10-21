@@ -9,5 +9,7 @@ fromUrl urlString =
         url =
             Erl.parse urlString
     in
-        Erl.toString url
-            ++ "/favicon.ico"
+        Erl.toString
+            { url
+                | path = [ "favicon.ico" ]
+            }
