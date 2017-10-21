@@ -1,8 +1,15 @@
 module Favicon exposing (fromUrl)
 
+{-| Gives the favicon URL for a given URL.
+@docs fromUrl
+-}
+
 import Erl
 
 
+{-| Get the favicon URL for a given URL.
+Returns Nothing if the URL protocol does not support favicons.
+-}
 fromUrl : String -> Maybe String
 fromUrl urlString =
     let

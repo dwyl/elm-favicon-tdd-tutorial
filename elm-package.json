@@ -6,7 +6,9 @@
     "source-directories": [
         "src"
     ],
-    "exposed-modules": [],
+    "exposed-modules": [
+      "Favicon"
+    ],
     "dependencies": {
         "elm-lang/core": "5.0.0 <= v < 6.0.0",
         "sporto/erl": "13.0.0 <= v < 14.0.0"
