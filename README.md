@@ -58,3 +58,21 @@ Returns the url you give it with the `"favicon.ico"` appended to it.
 Re-run the tests and now they pass:
 
 ![tests-passing](https://user-images.githubusercontent.com/194400/31855430-16d37eea-b6a3-11e7-8d11-0a2b51286739.png)
+
+
+### Create a More "Advanced" Test Case
+
+This test checks if URL path is stripped before appending the `"favicon.ico"`:
+
+```elm
+, test "URL with path" <|
+    \() ->
+        Favicon.fromUrl "https://github.com/audreyr/favicon-cheat-sheet"
+            |> Expect.equal "https://github.com/favicon.ico"
+```
+
+
+### Investigate Packages for URL Parsing
+
+Search http://package.elm-lang.org/ for "URL" ...
+Decides to use: http://package.elm-lang.org/packages/sporto/erl
