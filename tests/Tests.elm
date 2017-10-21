@@ -1,9 +1,9 @@
 module Tests exposing (..)
 
 import Expect exposing (Expectation)
-import Favicon
 import Fuzz exposing (Fuzzer, int, list, string)
 import Test exposing (..)
+import Favicon
 
 
 suite : Test
